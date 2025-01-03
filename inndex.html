@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapi Hati untuk Calon Haji</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #10B981;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #059669;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .price-card {
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .price-card.featured {
+            border-color: #10B981;
+        }
+
+        .icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            color: #10B981;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="text-5xl font-bold mb-6">Terapi Hati untuk Calon Haji</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Persiapkan hati dan jiwa Anda menuju Baitullah dengan program terapi spiritual yang mendalam</p>
+            <a href="#daftar" class="btn btn-primary">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">Program Unggulan</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-4">Penyucian Hati</h3>
+                    <p>Program mendalam untuk membersihkan hati dari sifat-sifat tercela</p>
+                </div>
+                <div class="card">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-4">Bimbingan langsung</h3>
+                    <p>Pendampingan langsung oleh para ustadz dan tim rumah melatih hati yang sudah berpengalaman</p>
+                </div>
+                <div class="card">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-4">Kesiapan Spiritual</h3>
+                    <p>Mendapatkan semangat kesiapan spiritual menuju tanah suci</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="daftar">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">Pilihan Paket</h2>
+            <div class="grid grid-2">
+                <div class="card price-card">
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Mandiri</span>
+                    <h3 class="text-2xl font-bold my-4">Paket Individual</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 300.000<span class="text-gray-500 text-lg">/orang</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">✓ E-book</li>
+                        <li class="flex items-center">✓ Souvenir</li>
+                        <li class="flex items-center">✓ coffee Break</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary w-full">Pilih Paket</a>
+                </div>
+                <div class="card price-card featured">
+                    <span class="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Pasangan</span>
+                    <h3 class="text-2xl font-bold my-4">Paket Pasangan</h3>
+                    <div class="text-4xl font-bold mb-6">Rp 500.000<span class="text-gray-500 text-lg">/pasangan</span></div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center">✓ E-book</li>
+                        <li class="flex items-center">✓ Souvenir</li>
+                        <li class="flex items-center">✓ Best Materi</li>
+                        <li class="flex items-center">✓ coffee Break</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary w-full">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Video Profile Section -->
+     <section class="section bg-white">
+        <div class="container">
+            <h2 class="text-3xl font-bold text-center mb-12">Profil Pemateri</h2>
+            <div class="grid grid-2 gap-8">
+                <!-- Pemateri 1 -->
+                <div class="profile-card">
+                    <div class="p-6">
+                        <img src="images/WhatsApp Image 2025-01-03 at 21.05.52.jpeg" alt="Ustadz Dr. Ahmad" class="profile-image mb-6">
+                        <h3 class="text-2xl font-bold text-center mb-2">Ustadz Dr. Ahmad Sulthoni</h3>
+                        <p class="text-gray-600 text-center mb-6">dosen UIN Salatiga & Motivator Haji</p>
+                        <div class="video-container mb-4">
+                            <div class="video-placeholder">
+                                
+                                    <p>Video Profil Ustadz Dr. Ahmad Syafii</p>
+                                    <video width="320" height="240" controls>
+                                        <source src="images/kontenpaksultoni_7439194721378897207.mp4" type="video/mp4">
+                                        Teks ini akan muncul jika browser tidak mendukung tag video.
+                                      </video>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-gray-600">
+                            <p class="mb-4">• berpengalaman membimbing calon haji</p>
+                            <p class="mb-4">• Doktor dari Universitas Islam Negeri Salatiga</p>
+                            <p>• Sering mengisi acara sebagai pemateri di berbagai acara baik kajian, seminar, maupun Pelatihan</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- [Rest of the previous sections remain the same] -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container">
+            <div class="grid grid-3">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hubungi Kami</h3>
+                    <p class="mb-2">Email: info@terapihaji.id</p>
+                    <p>WhatsApp: +62 812-3456-7890</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Media Sosial</h3>
+                    <div class="space-x-4">
+                        <a href="#" class="hover:text-green-400">Instagram</a>
+                        <a href="#" class="hover:text-green-400">Facebook</a>
+                        <a href="#" class="hover:text-green-400">YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [Previous sections remain the same until Program Section] -->
+
+   
+
+            <div class="text-center mt-12 pt-12 border-t border-gray-800">
+                <p>&copy; 2025 Terapi Hati untuk Calon Haji. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Play } from 'lucide-react';
+
+const LandingPage = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <header className="bg-green-800 text-white py-16">
+        <div className="container mx-auto px-4">
+          <h1 className="text-4xl font-bold mb-4">Pelatihan Terapi Hati Calon Haji</h1>
+          <p className="text-xl mb-8">Persiapkan hati dan jiwa Anda menuju Baitullah</p>
+        </div>
+      </header>
+
+      {/* Video Profile Section */}
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-8 text-center">Video Profil</h2>
+          <div className="relative bg-gray-800 rounded-lg aspect-video max-w-3xl mx-auto flex items-center justify-center">
+            <Button variant="outline" size="lg" className="absolute">
+              <Play className="mr-2" />
+              Putar Video
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-semibold mb-12 text-center">Pilihan Paket</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Individual Package */}
+            <Card className="p-6">
+              <CardContent>
+                <h3 className="text-2xl font-bold mb-4">Paket Mandiri</h3>
+                <div className="text-3xl font-bold mb-6">Rp 2.500.000</div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center">✓ Materi Lengkap</li>
+                  <li className="flex items-center">✓ Konsultasi Personal</li>
+                  <li className="flex items-center">✓ Modul Pembelajaran</li>
+                </ul>
+                <Button className="w-full bg-green-800 hover:bg-green-700">Daftar Sekarang</Button>
+              </CardContent>
+            </Card>
+
+            {/* Couple Package */}
+            <Card className="p-6">
+              <CardContent>
+                <h3 className="text-2xl font-bold mb-4">Paket Pasangan</h3>
+                <div className="text-3xl font-bold mb-6">Rp 4.500.000</div>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center">✓ Materi Lengkap untuk 2 Orang</li>
+                  <li className="flex items-center">✓ Konsultasi Pasangan</li>
+                  <li className="flex items-center">✓ Modul Pembelajaran</li>
+                  <li className="flex items-center">✓ Bonus Sesi Bimbingan</li>
+                </ul>
+                <Button className="w-full bg-green-800 hover:bg-green-700">Daftar Sekarang</Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="bg-white py-12">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-semibold mb-4">Hubungi Kami</h2>
+          <p className="mb-4">WhatsApp: +62 812-3456-7890</p>
+          <Button variant="outline" className="bg-green-800 text-white hover:bg-green-700">
+            Konsultasi Gratis
+          </Button>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default LandingPage;

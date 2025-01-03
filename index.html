@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terapi Hati: Persiapan Spiritual Haji</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1920/1080') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00b894;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .section {
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .features {
+            background: white;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-card {
+            padding: 30px;
+            border-radius: 15px;
+            background: #f8f9fa;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            margin: 20px 0;
+            color: #2d3436;
+        }
+
+        .pricing {
+            background: #2d3436;
+            color: white;
+        }
+
+        .price-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .price-card {
+            background: white;
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #00b894;
+            margin: 20px 0;
+        }
+
+        .benefits {
+            text-align: left;
+            margin: 30px 0;
+            padding-left: 20px;
+        }
+
+        .benefits li {
+            margin: 10px 0;
+        }
+
+        .testimonials {
+            background: #f8f9fa;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .testimonial-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section {
+                padding: 60px 20px;
+            }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Terapi Hati Calon Haji</h1>
+            <p>Persiapkan diri menuju tanah suci dengan ketenangan jiwa dan kebersihan hati</p>
+            <a href="#pricing" class="cta-btn floating">Daftar Sekarang</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mengapa Memilih Program Kami?</h2>
+                <p>Perjalanan spiritual yang dirancang khusus untuk generasi muda</p>
+            </div>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Mentoring Personal</h3>
+                    <p>Bimbingan one-on-one dengan ustadz/ustadzah berpengalaman yang memahami jiwa muda</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Materi Kekinian</h3>
+                    <p>Dikemas dengan gaya modern dan relevan, termasuk podcast dan sesi live streaming</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Komunitas Supportif</h3>
+                    <p>Bergabung dengan komunitas calon haji yang saling mendukung via grup WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilihan Paket Program</h2>
+                <p>Investasi terbaik untuk perjalanan spiritual Anda</p>
+            </div>
+            <div class="price-cards">
+                <div class="price-card">
+                    <h3>Paket Dasar</h3>
+                    <div class="price">Rp 2.5jt</div>
+                    <ul class="benefits">
+                        <li>E-book</li>
+                        <li>Souvenir</li>
+                        <li>Coffee Break</li>
+                        
+                    </ul>
+                    <a href="#" class="cta-btn">Pilih Paket</a>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Paket Pasangan</h3>
+                    <div class="price">Rp 7.5jt</div>
+                    <ul class="benefits">
+                        <li>E-book</li>
+                        <li>Souvenir</li>
+                        <li>Best Materi</li>
+                        <li>Coffee Break</li>
+                        
+                    </ul>
+                    <a href="#" class="cta-btn">Pilih Paket</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from('.feature-card', {
+            scrollTrigger: {
+                trigger: '.features',
+                start: 'top center'
+            },
+            y: 100,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2
+        });
+
+        gsap.from('.price-card', {
+            scrollTrigger: {
+                trigger: '.price-cards',
+                start: 'top center'
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2
+        });
+
+        gsap.from('.testimonial-card', {
+            scrollTrigger: {
+                trigger: '.testimonial-grid',
+                start: 'top center'
+            },
+            scale: 0.8,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.2
+        });
+    </script>
+
+    <style>
+        /* [Previous styles remain the same] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Add new styles for video section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #f1f5f9;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #10B981, #059669);
+            color: white;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        /* [Rest of previous styles remain the same] */
+    </style>
+
+    <style>
+        /* [Previous styles remain the same] */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Add new styles for video section */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background: #f1f5f9;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-placeholder {
+            position:absolute
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #10B981, #059669);
+            color: white;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        /* [Rest of previous styles remain the same] */
+    </style>
+</head>
+<body>
+    <!-- [Previous sections remain the same until Program Section] -->
+
+    
+    </div>
+</div>
+</div>
+</section>
+    
+
+    
+</body>
+</html>
